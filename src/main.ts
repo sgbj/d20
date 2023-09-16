@@ -53,7 +53,7 @@ async function main() {
     scene
   );
 
-  await SceneLoader.AppendAsync("/", "scene.gltf");
+  await SceneLoader.AppendAsync("", "scene.gltf");
 
   scene.meshes[2].scaling.scaleInPlace(30);
 
