@@ -1,0 +1,20 @@
+{
+  "name": "d20",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^6.21.0",
+    "@babylonjs/havok": "^1.1.4",
+    "@babylonjs/inspector": "^6.21.0"
+  }
+}
