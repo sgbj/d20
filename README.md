@@ -1,5 +1,4 @@
-![image](https://github.com/sgbj/d20/assets/5178445/db0273d2-0bb6-4028-bca0-a9f523e9e571)
-
+![image](https://github.com/sgbj/d20/assets/5178445/f9d41089-126e-4eb6-a44a-77e3ea4c958c)
 
 # d20
 Built with Babylon.js and Havok
