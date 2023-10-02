@@ -58,7 +58,7 @@ async function main() {
   );
 
   async function loadDie(name: string) {
-    const res = await SceneLoader.ImportMeshAsync("", "/", name);
+    const res = await SceneLoader.ImportMeshAsync("", "./", name);
     const newMesh = Mesh.MergeMeshes(
       res.meshes.slice(1) as Mesh[],
       true,
