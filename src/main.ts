@@ -17,7 +17,6 @@ import {
   SceneLoader,
   PhysicsViewer,
   HemisphericLight,
-  ScenePerformancePriority,
 } from "@babylonjs/core";
 import HavokPhysics from "@babylonjs/havok";
 
@@ -28,9 +27,8 @@ async function main() {
   const engine = new Engine(canvas, true);
   const scene = new Scene(engine);
   scene.clearColor = new Color4(0, 0, 0, 0);
-  scene.performancePriority = ScenePerformancePriority.Aggressive;
 
-  const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
+  scene.createDefaultLight();
   scene.createDefaultEnvironment({ createGround: false, createSkybox: false });
 
   const camera = new FreeCamera("camera", new Vector3(0, 10, 0), scene);
@@ -100,7 +98,6 @@ async function main() {
   engine.runRenderLoop(() => {
     scene.render();
   });
-  console.log(scene.meshes);
 
   window.addEventListener("resize", resize);
 
